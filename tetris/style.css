@@ -1,0 +1,52 @@
+body {
+    background-color: #323232;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tetris {
+    display: block;
+    margin: auto;
+    background: black;
+    border: 2px solid white;
+}
+#statWindow {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding: 0 20px 20px 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    background-color: #202020;
+    border: 2px solid white;
+    color: white;
+}
+#statWindow div{
+    background-color: #101010;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#queueWindow{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    padding: 0 20px 20px 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 32px;
+    background-color: #202020;
+    border: 2px solid white;
+    color: white;
+}
+#visualQueue{
+    background-color: #101010;
+}
