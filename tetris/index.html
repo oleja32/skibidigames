@@ -7,20 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="tetris" width="300" height="600"></canvas>
-    <div id="queueWindow">
-        <p>Next</p>
-        <div id="queueShape1">O</div>
-        <div id="queueShape2">O</div>
-        <div id="queueShape3">O</div>
-    </div>
-    <div id="statWindow">
-        <p>Level</p>
-        <div id="level">0</div>
-        <p>Score</p>
-        <div id="score">0</div>
-        <p>Lines</p>
-        <div id="lines">0</div> 
+    <header>
+        <p id="shopName">Skibidigames</p>
+        <div id="searchContainer">
+            <input type="text" id="searchBar">
+            <button id="searchBtn">Search</button>
+        </div>
+        <ul>
+            <li><a href="../index.html">Main menu</a></li>
+        </ul>
+    </header>
+    <div id="container">
+        <div id="statWindow">
+            <p>Level</p>
+            <div id="level">0</div>
+            <p>Score</p>
+            <div id="score">0</div>
+            <p>Lines</p>
+            <div id="lines">0</div> 
+        </div>
+        <div id="gameAndButtonContainer">
+            <canvas id="tetris" width="300" height="600"></canvas>
+            <div id="buttoncontainer">
+                <button id="startButton">Start</button>
+                <button id="restartButton" disabled>Restart</button>
+            </div>
+        </div>
+        </canvas>
+        
+        <div id="queueWindow">
+            <p>Next</p>
+            <div class="bgforcanvas">
+                <canvas id="queueShape1" width="60" height="40"></canvas>
+            </div>
+            <div class="bgforcanvas">
+                <canvas id="queueShape2" width="60" height="40"></canvas>
+            </div>
+            <div class="bgforcanvas">
+                <canvas id="queueShape3" width="60" height="40"></canvas>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
